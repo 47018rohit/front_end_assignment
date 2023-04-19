@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alatsi:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neuton:wght@700&display=swap");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+* {
+  --dashborad-bg: #ffffff;
+  --bg-gray: #F6F6FB;
+  --main-gray-bg: #EDEDF6;
+  --text-black-primary: #000000;
+  --light-violet: #4CD7F6;
+  --violet: #E17CFD;
+}
+
+.sidebar-bg {
+  background-color: var(--bg-gray);
+}
+
+.transitionSearch{
+  transition:all cubic-bezier(0,1,0,1) 300ms;
+}
+
+.focus{
+  background: linear-gradient(270.27deg, rgba(113, 102, 249, 0.07) 0%, rgba(113, 102, 249, 0.03) 97.77%);
+  padding-top: .75rem;padding-bottom: .75rem;
+}
+
+.violet-pink-gradient {
+  background: var(--violet);
+  background: radial-gradient(farthest-corner at 55% 40%, #4CD7F6 20%, #E17CFD 65%);
+  background: -webkit-linear-gradient(farthest-corner at 55% 40%,
+      #4CD7F6 20%,
+      #E17CFD 65%);
+  /* transition: all ease-in-out 500ms; */
+}
+
+.concured {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--text-black-primary);
+}
+
+.box-shadow:hover{
+  box-shadow: 0px 2px 3px 1px gray;
+}
+
+.font-Neuton{
+  font-family: 'Neuton';
+}
+.font-Alatsi{
+  font-family: 'Alatsi';
+}
+
+.gridTemp{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gradientRec{
+  background-color: #4CD7F6;
+  background-image: url(/gradientRectangle.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1rem 2rem 1rem .1rem #e17cfd49;
+}
